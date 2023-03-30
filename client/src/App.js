@@ -1,10 +1,13 @@
+import { ChakraProvider } from "@chakra-ui/react";
 import React from "react";
+import ProductCard from "./components/common/ProductCard";
+import Login from "./components/Login";
 
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <ChakraProvider>
+      <ProductCard />
+    </ChakraProvider>
   );
 };
 
